@@ -30,5 +30,6 @@
     "app/_app.js"
   ],
   "exclude": ["node_modules"],
-  "target": "es2015"
+  "target": "es2015",
+  "downlevelIteration": true
 }
