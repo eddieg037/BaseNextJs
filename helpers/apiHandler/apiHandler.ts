@@ -4,7 +4,7 @@ export const apiHandler = {
   deleteData,
 };
 //Change to deployment url
-const urlDev = process.env.VERCEL_URL ? process.env.VERCEL_URL : process.env.NEXT_PUBLIC_DEV_API_URL;
+const urlDev = process.env.NEXT_PUBLIC_API_URL;
 
 async function getData(url: string) {
   const response = await fetch(urlDev + url, {
