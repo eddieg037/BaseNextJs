@@ -126,7 +126,7 @@ The implementation of <link>MyBaseNextJs</link> reflects a deliberate approach a
 
 In conclusion, these are personal recommended next steps for enhancing the application. They are not meant as strict guidelines, as the application is customizable enough to provide easy integration with your preferred system.
 
-You can access the website by navigating to the following address in your web browser's address bar: "[base-next-js-lemon.vercel.app/dashboard](https://base-next-js-lemon.vercel.app/dashboard)".
+You can access the website by navigating to the following address in your web browser's address bar: [base-next-js-lemon.vercel.app/dashboard](https://base-next-js-lemon.vercel.app/dashboard).
 
 ### README Creation
 
