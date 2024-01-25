@@ -1,1 +1,212 @@
-[]
+[
+    {
+        "id": 1,
+        "clientEmail": "stephen.brown@example.com",
+        "telephone": "''",
+        "promotion": "pear",
+        "responded": "No"
+    },
+    {
+        "id": 2,
+        "clientEmail": "dorothy.peake@example.com",
+        "telephone": "555-8309",
+        "promotion": "kiwi",
+        "responded": "No"
+    },
+    {
+        "id": 3,
+        "clientEmail": "''",
+        "telephone": "555-7998",
+        "promotion": "mango",
+        "responded": "No"
+    },
+    {
+        "id": 4,
+        "clientEmail": "katherine.butler@example.com",
+        "telephone": "555-2311",
+        "promotion": "banana",
+        "responded": "Yes"
+    },
+    {
+        "id": 5,
+        "clientEmail": "adam.wilson@example.com",
+        "telephone": "555-3416",
+        "promotion": "orange",
+        "responded": "Yes"
+    },
+    {
+        "id": 6,
+        "clientEmail": "''",
+        "telephone": "555-8131",
+        "promotion": "apple",
+        "responded": "No"
+    },
+    {
+        "id": 7,
+        "clientEmail": "julia.coleman@example.com",
+        "telephone": "555-4073",
+        "promotion": "kiwi",
+        "responded": "Yes"
+    },
+    {
+        "id": 8,
+        "clientEmail": "amelia.gray@example.com",
+        "telephone": "555-3781",
+        "promotion": "pear",
+        "responded": "Yes"
+    },
+    {
+        "id": 9,
+        "clientEmail": "elizabeth.ross@example.com",
+        "telephone": "555-5323",
+        "promotion": "watermelon",
+        "responded": "Yes"
+    },
+    {
+        "id": 10,
+        "clientEmail": "''",
+        "telephone": "555-3555",
+        "promotion": "pineapple",
+        "responded": "No"
+    },
+    {
+        "id": 11,
+        "clientEmail": "''",
+        "telephone": "555-8008",
+        "promotion": "pear",
+        "responded": "Yes"
+    },
+    {
+        "id": 12,
+        "clientEmail": "amelia.bailey@example.com",
+        "telephone": "555-3448",
+        "promotion": "kiwi",
+        "responded": "Yes"
+    },
+    {
+        "id": 13,
+        "clientEmail": "steven.hunter@example.com",
+        "telephone": "555-7607",
+        "promotion": "pear",
+        "responded": "Yes"
+    },
+    {
+        "id": 14,
+        "clientEmail": "boris.davies@example.com",
+        "telephone": "555-6642",
+        "promotion": "mango",
+        "responded": "Yes"
+    },
+    {
+        "id": 15,
+        "clientEmail": "emily.hughes@example.com",
+        "telephone": "''",
+        "promotion": "watermelon",
+        "responded": "No"
+    },
+    {
+        "id": 16,
+        "clientEmail": "anne.duncan@example.com",
+        "telephone": "555-9797",
+        "promotion": "kiwi",
+        "responded": "No"
+    },
+    {
+        "id": 17,
+        "clientEmail": "nicholas.dickens@example.com",
+        "telephone": "555-5595",
+        "promotion": "apple",
+        "responded": "Yes"
+    },
+    {
+        "id": 18,
+        "clientEmail": "bella.reid@example.com",
+        "telephone": "''",
+        "promotion": "kiwi",
+        "responded": "Yes"
+    },
+    {
+        "id": 19,
+        "clientEmail": "audrey.parr@example.com",
+        "telephone": "555-6516",
+        "promotion": "strawberry",
+        "responded": "No"
+    },
+    {
+        "id": 20,
+        "clientEmail": "''",
+        "telephone": "555-8131",
+        "promotion": "orange",
+        "responded": "No"
+    },
+    {
+        "id": 21,
+        "clientEmail": "simon.duncan@example.com",
+        "telephone": "555-3495",
+        "promotion": "banana",
+        "responded": "Yes"
+    },
+    {
+        "id": 22,
+        "clientEmail": "owen.howard@example.com",
+        "telephone": "555-5006",
+        "promotion": "mango",
+        "responded": "Yes"
+    },
+    {
+        "id": 23,
+        "clientEmail": "dorothy.peake@example.com",
+        "telephone": "555-8309",
+        "promotion": "watermelon",
+        "responded": "No"
+    },
+    {
+        "id": 24,
+        "clientEmail": "tracey.lyman@example.com",
+        "telephone": "''",
+        "promotion": "kiwi",
+        "responded": "No"
+    },
+    {
+        "id": 25,
+        "clientEmail": "abigail.macleod@example.com",
+        "telephone": "555-5065",
+        "promotion": "banana",
+        "responded": "No"
+    },
+    {
+        "id": 26,
+        "clientEmail": "samantha.carr@example.com",
+        "telephone": "555-2163",
+        "promotion": "apple",
+        "responded": "No"
+    },
+    {
+        "id": 27,
+        "clientEmail": "steven.hunter@example.com",
+        "telephone": "''",
+        "promotion": "grape",
+        "responded": "No"
+    },
+    {
+        "id": 28,
+        "clientEmail": "jennifer.smith@example.com",
+        "telephone": "555-5688",
+        "promotion": "mango",
+        "responded": "Yes"
+    },
+    {
+        "id": 29,
+        "clientEmail": "''",
+        "telephone": "555-7889",
+        "promotion": "pineapple",
+        "responded": "No"
+    },
+    {
+        "id": 30,
+        "clientEmail": "julia.coleman@example.com",
+        "telephone": "555-4073",
+        "promotion": "mango",
+        "responded": "Yes"
+    }
+]

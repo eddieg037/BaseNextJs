@@ -1,1 +1,322 @@
-[]
+[
+    {
+        "id": 1000,
+        "buyerName": "E. North",
+        "item": "banana",
+        "price": 2,
+        "store": "Frolicking Fox Furnishings",
+        "transactionDate": "2021-02-22T00:00:00.000Z"
+    },
+    {
+        "id": 1001,
+        "buyerName": "K. Butler",
+        "item": "apple",
+        "price": 3.75,
+        "store": "Whimsical Willow Wares",
+        "transactionDate": "2021-03-07T00:00:00.000Z"
+    },
+    {
+        "id": 1002,
+        "buyerName": "J. Coleman",
+        "item": "pineapple",
+        "price": 3.5,
+        "store": "Frolicking Fox Furnishings",
+        "transactionDate": "2021-03-18T00:00:00.000Z"
+    },
+    {
+        "id": 1003,
+        "buyerName": "O. Howard",
+        "item": "mango",
+        "price": 4.5,
+        "store": "Whimsical Willow Wares",
+        "transactionDate": "2021-06-06T00:00:00.000Z"
+    },
+    {
+        "id": 1004,
+        "buyerName": "G. Sharp",
+        "item": "orange",
+        "price": 3,
+        "store": "Pegasus Pet Paradise",
+        "transactionDate": "2021-06-30T00:00:00.000Z"
+    },
+    {
+        "id": 1005,
+        "buyerName": "S. Mills",
+        "item": "strawberry",
+        "price": 3,
+        "store": "Pegasus Pet Paradise",
+        "transactionDate": "2021-07-20T00:00:00.000Z"
+    },
+    {
+        "id": 1006,
+        "buyerName": "L. Piper",
+        "item": "orange",
+        "price": 3,
+        "store": "Pegasus Pet Paradise",
+        "transactionDate": "2021-08-07T00:00:00.000Z"
+    },
+    {
+        "id": 1007,
+        "buyerName": "A. Bailey",
+        "item": "grape",
+        "price": 0.75,
+        "store": "Whimsical Willow Wares",
+        "transactionDate": "2021-08-11T00:00:00.000Z"
+    },
+    {
+        "id": 1008,
+        "buyerName": "J. Murray",
+        "item": "apple",
+        "price": 2.5,
+        "store": "Glimmering Gems Boutique",
+        "transactionDate": "2021-09-18T00:00:00.000Z"
+    },
+    {
+        "id": 1009,
+        "buyerName": "F. Simpson",
+        "item": "apple",
+        "price": 2.5,
+        "store": "Glimmering Gems Boutique",
+        "transactionDate": "2021-09-22T00:00:00.000Z"
+    },
+    {
+        "id": 1010,
+        "buyerName": "K. Harris",
+        "item": "strawberry",
+        "price": 3,
+        "store": "Pegasus Pet Paradise",
+        "transactionDate": "2021-09-28T00:00:00.000Z"
+    },
+    {
+        "id": 1011,
+        "buyerName": "S. Taylor",
+        "item": "orange",
+        "price": 3,
+        "store": "Pegasus Pet Paradise",
+        "transactionDate": "2021-12-23T00:00:00.000Z"
+    },
+    {
+        "id": 1012,
+        "buyerName": "J. Springer",
+        "item": "strawberry",
+        "price": 2,
+        "store": "Sunrise Sensations Supermarket",
+        "transactionDate": "2022-02-10T00:00:00.000Z"
+    },
+    {
+        "id": 1013,
+        "buyerName": "J. Blake",
+        "item": "apple",
+        "price": 2.5,
+        "store": "Frolicking Fox Furnishings",
+        "transactionDate": "2022-02-12T00:00:00.000Z"
+    },
+    {
+        "id": 1014,
+        "buyerName": "J. Simpson",
+        "item": "grape",
+        "price": 0.75,
+        "store": "Whimsical Willow Wares",
+        "transactionDate": "2022-02-24T00:00:00.000Z"
+    },
+    {
+        "id": 1015,
+        "buyerName": "J. Lambert",
+        "item": "pineapple",
+        "price": 3.5,
+        "store": "Sunrise Sensations Supermarket",
+        "transactionDate": "2022-04-06T00:00:00.000Z"
+    },
+    {
+        "id": 1016,
+        "buyerName": "B. Arnold",
+        "item": "orange",
+        "price": 2,
+        "store": "Frolicking Fox Furnishings",
+        "transactionDate": "2022-04-30T00:00:00.000Z"
+    },
+    {
+        "id": 1017,
+        "buyerName": "A. Sanderson",
+        "item": "mango",
+        "price": 4,
+        "store": "Pegasus Pet Paradise",
+        "transactionDate": "2022-05-16T00:00:00.000Z"
+    },
+    {
+        "id": 1018,
+        "buyerName": "F. Simpson",
+        "item": "mango",
+        "price": 4.5,
+        "store": "Whimsical Willow Wares",
+        "transactionDate": "2022-06-13T00:00:00.000Z"
+    },
+    {
+        "id": 1019,
+        "buyerName": "A. Chapman",
+        "item": "mango",
+        "price": 3,
+        "store": "Glimmering Gems Boutique",
+        "transactionDate": "2023-01-14T00:00:00.000Z"
+    },
+    {
+        "id": 1020,
+        "buyerName": "A. Chapman",
+        "item": "apple",
+        "price": 2.5,
+        "store": "Frolicking Fox Furnishings",
+        "transactionDate": "2023-03-03T00:00:00.000Z"
+    },
+    {
+        "id": 1021,
+        "buyerName": "J. May",
+        "item": "pear",
+        "price": 3,
+        "store": "Pegasus Pet Paradise",
+        "transactionDate": "2023-03-12T00:00:00.000Z"
+    },
+    {
+        "id": 1022,
+        "buyerName": "O. Ball",
+        "item": "strawberry",
+        "price": 2,
+        "store": "Sunrise Sensations Supermarket",
+        "transactionDate": "2023-04-25T00:00:00.000Z"
+    },
+    {
+        "id": 1023,
+        "buyerName": "P. Wilson",
+        "item": "banana",
+        "price": 2,
+        "store": "Sunrise Sensations Supermarket",
+        "transactionDate": "2023-06-09T00:00:00.000Z"
+    },
+    {
+        "id": 1024,
+        "buyerName": "B. Sutherland",
+        "item": "grape",
+        "price": 1.5,
+        "store": "Pegasus Pet Paradise",
+        "transactionDate": "2023-06-20T00:00:00.000Z"
+    },
+    {
+        "id": 1025,
+        "buyerName": "L. Piper",
+        "item": "kiwi",
+        "price": 1,
+        "store": "Sunrise Sensations Supermarket",
+        "transactionDate": "2021-01-06T00:00:00.000Z"
+    },
+    {
+        "id": 1026,
+        "buyerName": "R. Underwood",
+        "item": "banana",
+        "price": 3,
+        "store": "Pegasus Pet Paradise",
+        "transactionDate": "2021-01-14T00:00:00.000Z"
+    },
+    {
+        "id": 1027,
+        "buyerName": "E. Hughes",
+        "item": "pear",
+        "price": 2,
+        "store": "Glimmering Gems Boutique",
+        "transactionDate": "2021-01-22T00:00:00.000Z"
+    },
+    {
+        "id": 1028,
+        "buyerName": "C. Dickens",
+        "item": "kiwi",
+        "price": 1,
+        "store": "Frolicking Fox Furnishings",
+        "transactionDate": "2021-04-23T00:00:00.000Z"
+    },
+    {
+        "id": 1029,
+        "buyerName": "G. Dickens",
+        "item": "orange",
+        "price": 2,
+        "store": "Glimmering Gems Boutique",
+        "transactionDate": "2021-05-23T00:00:00.000Z"
+    },
+    {
+        "id": 1030,
+        "buyerName": "F. Simpson",
+        "item": "kiwi",
+        "price": 1,
+        "store": "Glimmering Gems Boutique",
+        "transactionDate": "2021-05-27T00:00:00.000Z"
+    },
+    {
+        "id": 1031,
+        "buyerName": "C. Avery",
+        "item": "pear",
+        "price": 2,
+        "store": "Glimmering Gems Boutique",
+        "transactionDate": "2021-11-21T00:00:00.000Z"
+    },
+    {
+        "id": 1032,
+        "buyerName": "K. Harris",
+        "item": "apple",
+        "price": 2.5,
+        "store": "Sunrise Sensations Supermarket",
+        "transactionDate": "2021-12-23T00:00:00.000Z"
+    },
+    {
+        "id": 1033,
+        "buyerName": "B. Sutherland",
+        "item": "mango",
+        "price": 4.5,
+        "store": "Whimsical Willow Wares",
+        "transactionDate": "2022-01-27T00:00:00.000Z"
+    },
+    {
+        "id": 1034,
+        "buyerName": "J. Rees",
+        "item": "apple",
+        "price": 2.5,
+        "store": "Frolicking Fox Furnishings",
+        "transactionDate": "2022-08-18T00:00:00.000Z"
+    },
+    {
+        "id": 1035,
+        "buyerName": "B. Reid",
+        "item": "watermelon",
+        "price": 4,
+        "store": "Glimmering Gems Boutique",
+        "transactionDate": "2022-09-12T00:00:00.000Z"
+    },
+    {
+        "id": 1036,
+        "buyerName": "M. Howard",
+        "item": "kiwi",
+        "price": 2,
+        "store": "Pegasus Pet Paradise",
+        "transactionDate": "2022-11-28T00:00:00.000Z"
+    },
+    {
+        "id": 1037,
+        "buyerName": "S. Carr",
+        "item": "strawberry",
+        "price": 2,
+        "store": "Sunrise Sensations Supermarket",
+        "transactionDate": "2023-03-03T00:00:00.000Z"
+    },
+    {
+        "id": 1038,
+        "buyerName": "A. Walker",
+        "item": "strawberry",
+        "price": 4.5,
+        "store": "Whimsical Willow Wares",
+        "transactionDate": "2023-05-12T00:00:00.000Z"
+    },
+    {
+        "id": 1039,
+        "buyerName": "A. Parr",
+        "item": "grape",
+        "price": 1.5,
+        "store": "Pegasus Pet Paradise",
+        "transactionDate": "2023-06-04T00:00:00.000Z"
+    }
+]
