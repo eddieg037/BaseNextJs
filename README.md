@@ -128,3 +128,6 @@ In conclusion, these are personal recommended next steps for enhancing the appli
 ### README Creation
 
 The README was created with the help of AI to ensure a standardized, comprehensive, and user-friendly format, providing clear instructions and information for users and developers.
+
+### License
+This project is licensed under the terms of the <link>MIT license</link>.
