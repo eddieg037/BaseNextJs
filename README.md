@@ -1,6 +1,6 @@
 ## MyBaseNextJs
 
-Welcome to <link>MyBaseNextJs</link> APP, a <link>Next.js</link> app for your interview needs.
+Welcome to <link>MyBaseNextJs</link> APP, a <link>Next.js</link> app you can use as a simple template.
 
 ### Contact Information
 
