@@ -9,7 +9,7 @@ Welcome to <link>MyBaseNextJs</link> APP, a <link>Next.js</link> app for your in
 
 ### Installation
 
-To install the necessary dependencies, run the following command in your terminal:
+To install the necessary dependencies, run the following command in your terminal(make sure to have npm installed on your device):
 
 npm install
 
