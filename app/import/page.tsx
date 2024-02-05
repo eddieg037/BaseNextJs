@@ -44,7 +44,7 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="w-full container mx-auto my-2 bg-gray-800 rounded-md">
+    <div className="w-full container mx-auto my-2 bg-gray-800 rounded-md text-white">
       <div className="text-center pt-4">
         <h1 className="text-2xl mb-4">Import Data</h1>
         <p>
