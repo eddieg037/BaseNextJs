@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="flex">
+        <main className="flex bg-black">
           <SideNav />
           {children}
         </main>

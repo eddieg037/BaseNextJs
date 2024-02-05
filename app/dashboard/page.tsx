@@ -5,7 +5,7 @@ import StoreInsight from "../ui/dashboard/StoreInsight";
 
 export default function Dashboard() {
   return (
-    <div className="w-full container mx-3 flex flex-wrap">
+    <div className="w-full container mx-3 flex flex-wrap text-white">
       <div className="w-1/3">
         <ClientPromotions />
       </div>
