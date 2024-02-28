@@ -1,6 +1,6 @@
 ## MyBaseNextJs
 
-Welcome to <link>MyBaseNextJs</link> APP, a <link>Next.js</link> app you can use as a simple template.
+Welcome to <link>MyBaseNextJs</link> APP, a <link>Next.js</link> app you can use as a simple template..
 
 ### Contact Information
 
@@ -122,7 +122,7 @@ The implementation of <link>MyBaseNextJs</link> reflects a deliberate approach a
 - **User Interface Improvements**: Apply a color scheme in accordance with the company's branding and consider adding a light-dark mode for improved user experience.
 
 - **Data Visualization**: Consider using graph libraries as a way to visualize data, especially on the dashboard page. The components were designed to be simple and easy to understand, making it easy to integrate any graphic or table libraries for data visualization.
-- **Mobile View Optimization**:  Enhance the app's responsiveness to ensure an optimal user experience on mobile devices. This includes adapting the layout, font sizes, and interactive elements to provide a seamless and visually appealing experience for users accessing the app on smartphones and tablets.
+- **Mobile View Optimization**: Enhance the app's responsiveness to ensure an optimal user experience on mobile devices. This includes adapting the layout, font sizes, and interactive elements to provide a seamless and visually appealing experience for users accessing the app on smartphones and tablets.
 
 In conclusion, these are personal recommended next steps for enhancing the application. They are not meant as strict guidelines, as the application is customizable enough to provide easy integration with your preferred system.
 
@@ -133,4 +133,5 @@ You can access the website by navigating to the following address in your web br
 The README was created with the help of AI to ensure a standardized, comprehensive, and user-friendly format, providing clear instructions and information for users and developers.
 
 ### License
+
 This project is licensed under the terms of the <link>MIT license</link>.
