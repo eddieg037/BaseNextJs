@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SideNav from "./ui/Sidenav";
+import { AuthProvider } from "./providers/AuthProvider";
 
 export const metadata: Metadata = {
   title: "MyBaseNextJs",
@@ -15,10 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-black font-sans">
-        <main className="flex bg-black">
-          <SideNav />
-          {children}
-        </main>
+        <AuthProvider>
+          <main className="flex bg-black min-h-screen">
+            <SideNav />
+            {children}
+          </main>
+        </AuthProvider>
       </body>
     </html>
   );

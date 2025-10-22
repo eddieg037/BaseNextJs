@@ -2,20 +2,25 @@
 
 import {
   CircleStackIcon,
-  LockClosedIcon,
   TableCellsIcon,
 } from "@heroicons/react/16/solid";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { useAuth } from "@/app/providers/AuthProvider";
+
 const links = [
-  { name: "Login", href: "/login", icon: LockClosedIcon },
   { name: "Dashboard", href: "/dashboard", icon: TableCellsIcon },
   { name: "Import Data", href: "/import", icon: CircleStackIcon },
 ];
 
 export default function SideNav() {
   const pathname = usePathname() ?? "";
+  const { isAuthenticated } = useAuth();
+
+  if (!isAuthenticated) {
+    return null;
+  }
 
   return (
     <aside className="bg-gray-800 text-white w-64 flex-shrink-0">

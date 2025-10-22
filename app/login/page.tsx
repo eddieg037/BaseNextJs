@@ -7,31 +7,33 @@ import {
   MOCK_ADMIN_CREDENTIALS,
   mockLogin,
 } from "@/helpers/auth/mockAuthService";
+import { useAuth } from "@/app/providers/AuthProvider";
 
 type LoginStatus = "idle" | "loading" | "success" | "error";
 
 export default function LoginPage() {
   const router = useRouter();
+  const { isAuthenticated, login } = useAuth();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [status, setStatus] = useState<LoginStatus>("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const isLoading = status === "loading";
-  const isSuccessful = status === "success";
+  const isSuccessful = status === "success" || isAuthenticated;
   const shouldDisableSubmit = isLoading || isSuccessful;
 
   useEffect(() => {
-    if (!isSuccessful) {
+    if (!isAuthenticated) {
       return undefined;
     }
 
     const timeoutId = window.setTimeout(() => {
-      router.push("/dashboard");
-    }, 800);
+      router.replace("/dashboard");
+    }, 600);
 
     return () => window.clearTimeout(timeoutId);
-  }, [isSuccessful, router]);
+  }, [isAuthenticated, router]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -40,7 +42,8 @@ export default function LoginPage() {
     setErrorMessage(null);
 
     try {
-      await mockLogin({ username, password });
+      const response = await mockLogin({ username, password });
+      login(response);
       setStatus("success");
     } catch (error) {
       setStatus("error");
