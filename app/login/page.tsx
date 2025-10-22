@@ -3,12 +3,12 @@
 import { FormEvent, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-const MOCK_CREDENTIALS = {
-  username: "admin",
-  password: "admin",
-} as const;
+import {
+  MOCK_ADMIN_CREDENTIALS,
+  mockLogin,
+} from "@/helpers/auth/mockAuthService";
 
-type LoginStatus = "idle" | "success" | "error";
+type LoginStatus = "idle" | "loading" | "success" | "error";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -17,10 +17,12 @@ export default function LoginPage() {
   const [status, setStatus] = useState<LoginStatus>("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
-  const isSubmitting = status === "success";
+  const isLoading = status === "loading";
+  const isSuccessful = status === "success";
+  const shouldDisableSubmit = isLoading || isSuccessful;
 
   useEffect(() => {
-    if (status !== "success") {
+    if (!isSuccessful) {
       return undefined;
     }
 
@@ -29,24 +31,32 @@ export default function LoginPage() {
     }, 800);
 
     return () => window.clearTimeout(timeoutId);
-  }, [router, status]);
+  }, [isSuccessful, router]);
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    const trimmedUsername = username.trim().toLowerCase();
+    setStatus("loading");
+    setErrorMessage(null);
 
-    if (
-      trimmedUsername === MOCK_CREDENTIALS.username &&
-      password === MOCK_CREDENTIALS.password
-    ) {
+    try {
+      await mockLogin({ username, password });
       setStatus("success");
-      setErrorMessage(null);
-      return;
+    } catch (error) {
+      setStatus("error");
+      if (error instanceof Error) {
+        setErrorMessage(error.message);
+      } else {
+        setErrorMessage("Unable to sign in right now. Please try again.");
+      }
     }
+  }
 
-    setStatus("error");
-    setErrorMessage("Invalid username or password. Try admin / admin.");
+  function resetStatusFeedback() {
+    if (status !== "idle") {
+      setStatus("idle");
+      setErrorMessage(null);
+    }
   }
 
   return (
@@ -75,13 +85,10 @@ export default function LoginPage() {
               value={username}
               onChange={(event) => {
                 setUsername(event.target.value);
-                if (status === "error") {
-                  setStatus("idle");
-                  setErrorMessage(null);
-                }
+                resetStatusFeedback();
               }}
               className="w-full rounded-md border border-slate-700 bg-slate-950 px-3 py-2 text-white transition focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder={MOCK_CREDENTIALS.username}
+              placeholder={MOCK_ADMIN_CREDENTIALS.username}
               required
             />
           </div>
@@ -101,24 +108,21 @@ export default function LoginPage() {
               value={password}
               onChange={(event) => {
                 setPassword(event.target.value);
-                if (status === "error") {
-                  setStatus("idle");
-                  setErrorMessage(null);
-                }
+                resetStatusFeedback();
               }}
               className="w-full rounded-md border border-slate-700 bg-slate-950 px-3 py-2 text-white transition focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder={MOCK_CREDENTIALS.password}
+              placeholder={MOCK_ADMIN_CREDENTIALS.password}
               required
             />
           </div>
 
           <button
             type="submit"
-            aria-busy={isSubmitting}
+            aria-busy={isLoading}
             className="w-full rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-slate-900 disabled:cursor-not-allowed disabled:opacity-70"
-            disabled={isSubmitting}
+            disabled={shouldDisableSubmit}
           >
-            {isSubmitting ? "Signing In..." : "Sign In"}
+            {isLoading ? "Signing In..." : "Sign In"}
           </button>
         </form>
 
@@ -127,7 +131,7 @@ export default function LoginPage() {
         </p>
 
         <div aria-live="polite" className="mt-4 space-y-2" role="status">
-          {status === "success" ? (
+          {isSuccessful ? (
             <p className="rounded-md border border-emerald-500 bg-emerald-900/50 p-3 text-sm text-emerald-200">
               Login successful! Redirecting to your dashboard...
             </p>
