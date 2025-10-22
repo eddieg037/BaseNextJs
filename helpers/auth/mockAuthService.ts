@@ -39,5 +39,5 @@ export async function mockLogin(
     };
   }
 
-  throw new Error("Invalid username or password. Try admin / admin.");
+  throw new Error("Invalid username or password.");
 }

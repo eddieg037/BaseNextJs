@@ -3,10 +3,7 @@
 import { FormEvent, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import {
-  MOCK_ADMIN_CREDENTIALS,
-  mockLogin,
-} from "@/helpers/auth/mockAuthService";
+import { mockLogin } from "@/helpers/auth/mockAuthService";
 import { useAuth } from "@/app/providers/AuthProvider";
 
 type LoginStatus = "idle" | "loading" | "success" | "error";
@@ -68,7 +65,7 @@ export default function LoginPage() {
         <header className="mb-6 text-center">
           <h1 className="text-3xl font-semibold text-white">Welcome back</h1>
           <p className="mt-2 text-sm text-slate-300">
-            Sign in with the mock administrator credentials below.
+            Sign in to access the administrative dashboard.
           </p>
         </header>
 
@@ -91,7 +88,7 @@ export default function LoginPage() {
                 resetStatusFeedback();
               }}
               className="w-full rounded-md border border-slate-700 bg-slate-950 px-3 py-2 text-white transition focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder={MOCK_ADMIN_CREDENTIALS.username}
+              placeholder="Enter your username"
               required
             />
           </div>
@@ -114,7 +111,7 @@ export default function LoginPage() {
                 resetStatusFeedback();
               }}
               className="w-full rounded-md border border-slate-700 bg-slate-950 px-3 py-2 text-white transition focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder={MOCK_ADMIN_CREDENTIALS.password}
+              placeholder="Enter your password"
               required
             />
           </div>
@@ -128,10 +125,6 @@ export default function LoginPage() {
             {isLoading ? "Signing In..." : "Sign In"}
           </button>
         </form>
-
-        <p className="mt-4 text-center text-xs text-slate-400">
-          Mock credentials: <span className="font-semibold">admin / admin</span>
-        </p>
 
         <div aria-live="polite" className="mt-4 space-y-2" role="status">
           {isSuccessful ? (
