@@ -1,11 +1,11 @@
 "use client";
 
-import { StoreInsight } from "@/data/definitions";
+import type { StoreInsight as StoreInsightData } from "@/data/definitions";
 import { apiHandler } from "@/helpers/apiHandler/apiHandler";
 import { useEffect, useState } from "react";
 
 export default function StoreInsight() {
-  const [storeInsight, setStoreInsight] = useState<StoreInsight>();
+  const [storeInsight, setStoreInsight] = useState<StoreInsightData>();
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
