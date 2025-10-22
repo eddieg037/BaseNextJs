@@ -9,7 +9,7 @@ Welcome to <link>MyBaseNextJs</link> APP, a <link>Next.js</link> app you can use
 
 ### Installation
 
-Ensure you are using Node.js 22 or later (the repository includes an `.nvmrc` file you can use with `nvm use`).
+Ensure you are using Node.js 22 (the repository includes an `.nvmrc` file you can use with `nvm use`).
 
 To install the necessary dependencies, run the following command in your terminal(make sure to have npm installed on your device):
 
@@ -40,6 +40,7 @@ The tech stack for MyBaseNextJs includes the following libraries and frameworks:
 
 MyBaseNextJs consists of the following pages:
 
+- **Login**: Provides a mock authentication flow used to gate access to the rest of the app. Submit any email address and password to trigger the mocked API call, which stores a session in the in-memory `AuthProvider`. The page displays validation feedback for missing fields and automatically redirects authenticated users to the dashboard.
 - **Dashboard**: This page contains four components:
   - Client and Promotion Feedback Information
   - Store Insights on Best Store and Best Product
