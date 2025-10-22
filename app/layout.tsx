@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import SideNav from "./ui/Sidenav";
-
-const inter = Inter({ subsets: ["latin"] });
+import { AuthProvider } from "./providers/AuthProvider";
 
 export const metadata: Metadata = {
   title: "MyBaseNextJs",
@@ -17,11 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main className="flex bg-black">
-          <SideNav />
-          {children}
-        </main>
+      <body className="bg-black font-sans">
+        <AuthProvider>
+          <main className="flex bg-black min-h-screen">
+            <SideNav />
+            {children}
+          </main>
+        </AuthProvider>
       </body>
     </html>
   );

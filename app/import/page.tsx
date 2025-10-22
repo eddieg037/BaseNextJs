@@ -52,7 +52,7 @@ export default function Dashboard() {
           data. It will automatically read the data files in server and
           re-import the data to our data files in a normalized way for use in
           the application. If your dashboard components indicate no data, please
-          click the 'Import Data' button. If you wish to import data from a
+          click the &ldquo;Import Data&rdquo; button. If you wish to import data from a
           local file, please reach out to an administrator for help with this,
           future enhancements will implement security and will permit certain
           users to import data from their local files.
@@ -60,7 +60,9 @@ export default function Dashboard() {
         <br />
         <p>
           {" "}
-          **The 'Delete Data' button will delete all data in our files, this
+          <strong>
+            The &ldquo;Delete Data&rdquo; button will delete all data in our files, this
+          </strong>
           data can be re-imported but if any additions where done from outside
           the file, these changes will be lost.
         </p>

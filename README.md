@@ -9,6 +9,8 @@ Welcome to <link>MyBaseNextJs</link> APP, a <link>Next.js</link> app you can use
 
 ### Installation
 
+Ensure you are using Node.js 22 or later (the repository includes an `.nvmrc` file you can use with `nvm use`).
+
 To install the necessary dependencies, run the following command in your terminal(make sure to have npm installed on your device):
 
 npm install
