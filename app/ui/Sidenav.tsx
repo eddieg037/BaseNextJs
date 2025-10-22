@@ -15,7 +15,7 @@ const links = [
 ];
 
 export default function SideNav() {
-  const pathname = usePathname();
+  const pathname = usePathname() ?? "";
 
   return (
     <aside className="bg-gray-800 text-white w-64 flex-shrink-0">
