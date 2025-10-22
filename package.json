@@ -7,9 +7,12 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "BROWSERSLIST_IGNORE_OLD_DATA=1 next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "npm run test:unit",
+    "pretest:unit": "tsc -p tsconfig.tests.json",
+    "test:unit": "node --test dist-tests/tests/**/*.test.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
